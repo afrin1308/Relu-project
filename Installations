@@ -1,0 +1,25 @@
+install necessary libraries
+  pip install pandas
+  pip install selenium
+  pip install webdriver-manager
+  pip install lxml
+Technologies
+All the tecnologies required for this project are given below
+Pandas ( Necessary library for data manipulation, cleaning, analysis)
+
+BeautifulSoup (Library used to pull data out of XML or HTML files)
+
+Selenium (Selenium is also used for scraping and more efficient than BeatifulSoup when websites like Amazon use more javascript)
+
+Webdriver (Webdriver is used with selenium to automate web applications)
+
+Development
+Read excel file with pandas and put that into pandas dataframe
+  df=pd.read_csv(f"url")
+Scrape data from the url's, which are extracted through the given google spreadsheet and append that to a new dataframe.
+
+View the top 100 rows and drop null values if needed.
+
+top_product=Product.head(30)
+Convert that dataframe into json file.
+df2 = Product.to_json(orient = 'columns')
